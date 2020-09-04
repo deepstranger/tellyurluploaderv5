@@ -4,13 +4,13 @@ i am Telegram URL Upload Bot! Created by @shreevish
 
 Please send me any direct download URL Link, i can upload to telegram as File/Video
 
- 🚨 . . . NB: its support almost all direct Urls except torrent link & some links . . . 🚨
+ 🚨 . . . Note : its support almost all direct Url's except torrent link & some links . . . 🚨
  
 🚨 PRON video🔞 Links gives you PERMANENT BAN 🚨
 
        ┈┈┈••💙✿❤️✿💚••┈┈┈
        
-AnyDLclone bot created by @shreevish"""
+URL-UPLOADER bot created by @shreevish"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "/help for Details"
@@ -36,9 +36,7 @@ URL | filename | username | password"""
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     CURENT_PLAN_DETAILS = """Current plan details
 --------
-Telegram ID: <code>{}</code>
-Plan name: Free Cloned User
-Expires on: 31/12/2020"""
+@shreevish"""
     HELP_USER = """Hai am URL Uploader bot..
     
 1. Send url (Link|New Name with Extension).
