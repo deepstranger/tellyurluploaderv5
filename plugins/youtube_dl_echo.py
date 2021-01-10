@@ -44,14 +44,14 @@ async def echo(bot, update):
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
-               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
+               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**-Contact @shreevish")
                return
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
                 text="**Join My Updates Channel to use ME 😎 🤭**",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
+                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/All_Movie_Rockers")]
               ])
             )
             return
@@ -182,11 +182,11 @@ async def echo(bot, update):
                 if format_string is not None and not "audio only" in format_string:
                     ikeyboard = [
                         pyrogram.InlineKeyboardButton(
-                            "S " + format_string + " video " + approx_file_size + " ",
+                            "🎞S " + format_string + " video " + approx_file_size + " ",
                             callback_data=(cb_string_video).encode("UTF-8")
                         ),
                         pyrogram.InlineKeyboardButton(
-                            "D " + format_ext + " " + approx_file_size + " ",
+                            "📁D " + format_ext + " " + approx_file_size + " ",
                             callback_data=(cb_string_file).encode("UTF-8")
                         )
                     ]
@@ -204,13 +204,13 @@ async def echo(bot, update):
                     # special weird case :\
                     ikeyboard = [
                         pyrogram.InlineKeyboardButton(
-                            "SVideo [" +
+                            "🎞SVideo [" +
                             "] ( " +
                             approx_file_size + " )",
                             callback_data=(cb_string_video).encode("UTF-8")
                         ),
                         pyrogram.InlineKeyboardButton(
-                            "DFile [" +
+                            "📁DFile [" +
                             "] ( " +
                             approx_file_size + " )",
                             callback_data=(cb_string_file).encode("UTF-8")
@@ -240,11 +240,11 @@ async def echo(bot, update):
                 "video", format_id, format_ext)
             inline_keyboard.append([
                 pyrogram.InlineKeyboardButton(
-                    "SVideo",
+                    "🎞SVideo",
                     callback_data=(cb_string_video).encode("UTF-8")
                 ),
                 pyrogram.InlineKeyboardButton(
-                    "DFile",
+                    "📁DFile",
                     callback_data=(cb_string_file).encode("UTF-8")
                 )
             ])
@@ -301,11 +301,11 @@ async def echo(bot, update):
             "video", "OFL", "ENON")
         inline_keyboard.append([
             pyrogram.InlineKeyboardButton(
-                "SVideo",
+                "🎞SVideo",
                 callback_data=(cb_string_video).encode("UTF-8")
             ),
             pyrogram.InlineKeyboardButton(
-                "DFile",
+                "📁DFile",
                 callback_data=(cb_string_file).encode("UTF-8")
             )
         ])
