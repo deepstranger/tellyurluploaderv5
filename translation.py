@@ -10,7 +10,10 @@ Please send me any direct download URL Link, i can upload to telegram as File/Vi
 
        ┈┈┈••💙✿❤️✿💚••┈┈┈
        
-URL-UPLOADER bot created by @shreevish"""
+URL-UPLOADER bot created by @shreevish
+
+
+⚠️Note :- Join My Channel before paste the link"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "/help for Details"
@@ -51,7 +54,15 @@ Creator : @shreevish
 --------
 Send /me to know current plan details
 
-Support Group : © @allmovierockers"""
+Support Group : © @All_Movie_Rockers"""
+    
+     ABOUT_TEXT = """⭕️<b>My Name : URL-UPLOADER</b>
+⭕️<b>Creater :</b> @shreevish
+⭕️<b>Language :</b> <code>Python3</code>
+⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+⭕️<b>Source Code :</b> 👉 <a href='https://telegram.dog/All_Movie_rockers'>Click Here</a>"""
+        
+        
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
