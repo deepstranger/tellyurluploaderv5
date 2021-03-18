@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
+# (c) Shreenidhi
 
-# the logging things
+(# the logging things
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -30,20 +30,22 @@ def GetExpiryDate(chat_id):
     Config.AUTH_USERS.add(683538773)
     return expires_at
 
-
-@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["help", "about"]))
 async def help_user(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/help")
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
-      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
-"""@pyrogram.Client.on_message(pyrogram.Filters.command(["me"]))
+
+
+
+@pyrogram.Client.on_message(pyrogram.Filters.command(["me"]))
 async def get_me_info(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/me")
@@ -55,7 +57,7 @@ async def get_me_info(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
-    )"""
+    )
 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
@@ -65,21 +67,14 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/allmovierockerssdiscussion"),
+                                                    InlineKeyboardButton(text="Creator ♐️", url="https://t.me/shreevish")]]),
+         parse_mode="html",
+        disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
     
-    """@pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
-async def start(bot, update):
- TRChatBase(update.from_user.id, update.text, "/start")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.START_TEXT,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/allmovierockerssdiscussion"),
-                                                    InlineKeyboardButton(text="Creator ♐️", url="https://t.me/shreevish")]]),
-        reply_to_message_id=update.message_id
-    )"""
-
-
+ 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["upgrade"]))
 async def upgrade(bot, update):
@@ -91,4 +86,4 @@ async def upgrade(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
-    )
+    ) )
