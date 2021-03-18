@@ -45,19 +45,7 @@ async def help_user(bot, update):
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
-
-@pyrogram.Client.on_message(pyrogram.filters.command(["about"]))
-async def help_user(bot, update):
-    # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/about")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.ABOUT_TEXT,
-      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
-        parse_mode="html",
-      disable_web_page_preview=True,
-        reply_to_message_id=update.message_id   
-    ) 
+ 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["about"]))
 async def get_me_info(bot, update):
@@ -66,6 +54,7 @@ async def get_me_info(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.CURENT_PLAN_DETAILS,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
