@@ -22,7 +22,7 @@ from translation import Translation
 from pyrogram import Client, filters
 
 # the Telegram trackings
-from chatbase import Message
+from Chatbase import Message
 
 
 def TRChatBase(chat_id, message_text, intent):
