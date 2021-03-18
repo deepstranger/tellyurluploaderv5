@@ -37,11 +37,15 @@ URL | filename | username | password"""
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
     NO_VOID_FORMAT_FOUND = "Sorry, Your link doesnot cointain any video\n<b>YouTubeDL</b> said: {}"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
-    CURENT_PLAN_DETAILS = """Current plan details
---------
-@shreevish"""
-    HELP_USER = """Hai am URL Uploader bot..
+    CURENT_PLAN_DETAILS = """⭕️<b>My Name : URL-UPLOADER</b>
+⭕️<b>Creater :</b> @shreevish
+⭕️<b>Language :</b> <code>Python3</code>
+⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+⭕️<b>Source Code :</b> 👉 <a href='https://telegram.dog/All_Movie_rockers'>Click Here</a>"""
     
+    HELP_USER = """Hai am URL Uploader bot..
+👉  Follow the below steps to download :-
+
 1. Send url (Link|New Name with Extension).
 2. Send Custom Thumbnail (Optional).
 3. Select the button.
@@ -52,15 +56,10 @@ URL | filename | username | password"""
    
 Creator : @shreevish
 --------
-Send /me to know current plan details
+Send /about to know current plan details
 
 Support Group : © @All_Movie_Rockers"""
-    
-     ABOUT_TEXT = """⭕️<b>My Name : URL-UPLOADER</b>
-⭕️<b>Creater :</b> @shreevish
-⭕️<b>Language :</b> <code>Python3</code>
-⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
-⭕️<b>Source Code :</b> 👉 <a href='https://telegram.dog/All_Movie_rockers'>Click Here</a>"""
+ 
         
         
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
