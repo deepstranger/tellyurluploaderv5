@@ -1,21 +1,32 @@
 class script(object):
 
-    START_TEXT = """<b>Hai ,
-    
-I'm A simple Zee5 link downloader bot With Permanent Thumbnail Support💯.
-Please send me any Zee5 link, I can upload it to telegram as File/Video.
-Currently I'm in beta mode 🥺, If found any bugs, report @shreevish !
-Click <i>/help</i> for more details....</b>"""
+    START_TEXT = """Hello,
+i am Telegram URL Upload Bot! Created by @shreevish
+Please send me any direct download URL Link, i can upload to telegram as File/Video
+ 🚨 . . . Note : its support almost all direct Url's except torrent link & some links . . . 🚨
+ 
+🚨 PRON video🔞 Links gives you PERMANENT BAN 🚨
+       ┈┈┈••💙✿❤️✿💚••┈┈┈
+       
+URL-UPLOADER bot created by @shreevish"""
 
 
     HELP_USER = """<b>Hai, Follow these steps..</b>
  
-1. Send Custom Thumbnail (It will be saved permenantly!)
-2. Send your zee5 url and select desired option.
-NOTE: Download may take some time! So please wait for it to complete!"""
+NOTE: Download may take some time! So please wait for it to complete!
+
+1. Send url (Link|New Name with Extension).
+2. Send Custom Thumbnail (Optional).
+3. Select the button.
+   SVideo - Give File as video with Screenshots
+   DFile  - Give File with Screenshots
+   Video  - Give File as video without Screenshots
+   DFile  - Give File without Screenshots
+   
+Creator : @shreevish"""
 
 
-    ABOUT_TEXT = """⭕️<b>My Name : TroJanZ Zee5 DL</b>
+    ABOUT_TEXT = """⭕️<b>My Name : URL-UPLOADER</b>
 ⭕️<b>Creater :</b> @shreevish
 ⭕️<b>Language :</b> <code>Python3</code>
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
