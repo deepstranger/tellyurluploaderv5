@@ -23,7 +23,7 @@ from translation import Translation
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from helper_funcs.chat_base import TRChatBase
+from helper_funcs.chat_base.py import TRChatBase
 
 def GetExpiryDate(chat_id):
     expires_at = (str(chat_id), "Source Cloned User", "1970.01.01.12.00.00")
@@ -31,30 +31,18 @@ def GetExpiryDate(chat_id):
     return expires_at
 
 
-"""@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
 async def help_user(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/help")
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
-    )"""
-
-@pyrogram.Client.on_message(filters.command(["help", "about"]))
-async def help_user(bot, update):
-TRChatBase(update.from_user.id, update.text, "/help")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.HELP_USER,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
+      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
-    
 """@pyrogram.Client.on_message(pyrogram.Filters.command(["me"]))
 async def get_me_info(bot, update):
     # logger.info(update)
