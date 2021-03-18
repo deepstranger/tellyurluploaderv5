@@ -3,120 +3,7 @@
 # (c) Shreenidhi N Koppal
 
 
-import os
-import time
-import numpy
-
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
-
-from PIL import Image
-from pyrogram import Client, filters
-
-from script import script
-from database.database import *
-
-
-@Client.on_message(filters.photo)
-async def save_photo(bot, update):
-    if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
-
-    if update.media_group_id is not None:
-        download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + "/" + str(update.media_group_id) + "/"
-        if not os.path.isdir(download_location):
-            os.makedirs(download_location)
-        await df_thumb(update.from_user.id, update.message_id)
-        await bot.download_media(
-            message=update,
-            file_name=download_location
-        )
-    else:
-        download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
-        await df_thumb(update.from_user.id, update.message_id)
-        await bot.download_media(
-            message=update,
-            file_name=download_location
-        )
-        await bot.send_message(
-            chat_id=update.chat.id,
-            text=script.SAVED_CUSTOM_THUMB_NAIL,
-            reply_to_message_id=update.message_id
-        )
-
-
-@Client.on_message(filters.command(["delthumb"]))
-async def delete_thumbnail(bot, update):
-    if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
-
-    thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
-    
-    try:
-        await del_thumb(update.from_user.id)
-    except:
-        pass
-    try:
-        os.remove(thumb_image_path)
-    except:
-        pass
-
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=script.DEL_ETED_CUSTOM_THUMB_NAIL,
-        reply_to_message_id=update.message_id
-    )
-
-
-@Client.on_message(filters.command(["showthumb"]))
-async def show_thumb(bot, update):
-    if update.from_user.id in Config.BANNED_USERS:
-        await bot.delete_messages(
-            chat_id=update.chat.id,
-            message_ids=update.message_id,
-            revoke=True
-        )
-        return
-
-    thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
-    if not os.path.exists(thumb_image_path):
-        mes = await thumb(update.from_user.id)
-        if mes != None:
-            m = await bot.get_messages(update.chat.id, mes.msg_id)
-            await m.download(file_name=thumb_image_path)
-            thumb_image_path = thumb_image_path
-        else:
-            thumb_image_path = None    
-    
-    if thumb_image_path is not None:
-        try:
-            await bot.send_photo(
-                chat_id=update.chat.id,
-                photo=thumb_image_path,
-                caption=script.SHOW_THUMB
-            )
-        except:
-            pass 
-    else:
-        await bot.send_message(
-            chat_id=update.chat.id,
-            text=script.NO_THUMB,
-            reply_to_message_id=update.message_id
-        )
-
-"""# the logging things
+# the logging things
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -142,7 +29,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from helper_funcs.chat_base import TRChatBase
 
 
-@Client.on_message(pyrogram.Filters.command(["generatecustomthumbnail"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["generatecustomthumbnail"]))
 async def generate_custom_thumbnail(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -198,7 +85,7 @@ async def generate_custom_thumbnail(bot, update):
         )
 
 
-@Client.on_message(pyrogram.Filters.photo)
+@pyrogram.Client.on_message(pyrogram.Filters.photo)
 async def save_photo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -232,7 +119,7 @@ async def save_photo(bot, update):
         )
 
 
-@Client.on_message(pyrogram.Filters.command(["deletethumbnail"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["deletethumbnail"]))
 async def delete_thumbnail(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -253,4 +140,3 @@ async def delete_thumbnail(bot, update):
         text=Translation.DEL_ETED_CUSTOM_THUMB_NAIL,
         reply_to_message_id=update.message_id
     )
-"""
