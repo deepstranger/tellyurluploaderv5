@@ -58,7 +58,7 @@ async def get_me_info(bot, update):
     )"""
 
 
-"""@pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/start")
@@ -77,7 +77,7 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/allmovierockerssdiscussion"),
                                                     InlineKeyboardButton(text="Creator ♐️", url="https://t.me/shreevish")]]),
         reply_to_message_id=update.message_id
-    )
+    )"""
 
 
 
