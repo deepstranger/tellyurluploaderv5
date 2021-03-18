@@ -30,7 +30,7 @@ def GetExpiryDate(chat_id):
     Config.AUTH_USERS.add(683538773)
     return expires_at
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["help", "about"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
 async def help_user(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/help")
@@ -45,7 +45,7 @@ async def help_user(bot, update):
 
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["me"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["me"]))
 async def get_me_info(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/me")
