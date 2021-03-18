@@ -66,9 +66,9 @@ async def start(bot, update):
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
         reply_to_message_id=update.message_id
-    )"""
+    )
     
- @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
+    """@pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
  TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
