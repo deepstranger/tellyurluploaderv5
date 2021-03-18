@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # (c) Shreenidhi
 
-(# the logging things
+# the logging things
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -86,4 +86,4 @@ async def upgrade(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True
-    ) )
+    ) 
