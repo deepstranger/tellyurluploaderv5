@@ -87,6 +87,6 @@ async def upgrade(bot, update):
         text=Translation.UPGRADE_TEXT,
       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]])
         parse_mode="html",
-        reply_to_message_id=update.message_id,
-        disable_web_page_preview=True
+        disable_web_page_preview=True,
+        reply_to_message_id=update.message_id
     )
