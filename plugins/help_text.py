@@ -20,6 +20,9 @@ else:
 # the Strings used for this "thing"
 from translation import Translation
 
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
@@ -30,35 +33,36 @@ def GetExpiryDate(chat_id):
     Config.AUTH_USERS.add(683538773)
     return expires_at
 
-
-@pyrogram.Client.on_message(pyrogram.filters.command(["help", "about"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["help"]))
 async def help_user(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/help")
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
+ 
 
-
-@pyrogram.Client.on_message(pyrogram.filters.command(["me"]))
+@pyrogram.Client.on_message(pyrogram.filters.command(["about"]))
 async def get_me_info(bot, update):
     # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/me")
+    TRChatBase(update.from_user.id, update.text, "/about")
     chat_id = str(update.from_user.id)
     chat_id, plan_type, expires_at = GetExpiryDate(chat_id)
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.CURENT_PLAN_DETAILS.format(chat_id, plan_type, expires_at),
+      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
-
-
+        
+ 
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
     # logger.info(update)
@@ -66,9 +70,13 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/allmovierockerssdiscussion"),
+                                                    InlineKeyboardButton(text="Creator ♐️", url="https://t.me/shreevish")]]),
+        
         reply_to_message_id=update.message_id
     )
-
+    
+ 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["upgrade"]))
 async def upgrade(bot, update):
