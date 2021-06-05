@@ -107,3 +107,5 @@ You can use /rename command after receiving file to rename it with custom thumbn
     ZIP_UPLOADED_STR = "Uploaded {} files in {} seconds"
     FREE_USER_LIMIT_Q_SZE = """ """
     SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
+    SHOW_THUMB = "Use /deletethumbnail to clear this thumbnail."
+    NO_THUMB = "No saved thumbnails Found!!\n\nSend an image to save it as your thumbnail permanently."
