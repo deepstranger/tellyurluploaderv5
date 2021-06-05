@@ -35,10 +35,10 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 
 @pyrogram.Client.on_message(pyrogram.filters.regex(pattern=".*http.*"))
-async def echo(bot, update):
-"""    if update.from_user.id in Config.BANNED_USERS:
+"""async def echo(bot, update):
+     if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
-        return"""
+        return
     TRChatBase(update.from_user.id, update.text, "/echo")
     update_channel = Config.UPDATE_CHANNEL
     if update_channel:
@@ -58,7 +58,21 @@ async def echo(bot, update):
             return
         except Exception:
             await update.reply_text("Something Wrong. Contact my Support Group")
-            return
+            return"""
+async def echo(bot, update):
+    if update.from_user.id in Config.AUTH_USERS:
+        await bot.delete_messages(
+            chat_id=update.chat.id,
+            message_ids=update.message_id,
+            revoke=True
+        )
+        return
+    # logger.info(update)
+    TRChatBase(update.from_user.id, update.text, "/echo")
+    # await bot.send_chat_action(
+    #     chat_id=update.chat.id,
+    #     action="typing"
+    # )
     logger.info(update.from_user)
     url = update.text
     youtube_dl_username = None
