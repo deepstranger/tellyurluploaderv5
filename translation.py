@@ -12,15 +12,34 @@ Please send me any direct download URL Link, i can upload to telegram as File/Vi
        
 URL-UPLOADER bot created by @shreevish
 
+➼/start = To Check whether the bot is alive or not
+➼/help = To Know how to use me! 
+➼/about +Tknow what am I
 
 ⚠️Note :- Join My Channel before paste the link"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "Contact @shreevish for Details"
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
-    SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
-URL | filename | username | password"""
-    NOYES_URL = "@shreevish URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
+    FORMAT_SELECTION = """📭 𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁👇
+
+🎞️ 𝗩𝗜𝗗𝗘𝗢 = Upload as Streamble.
+
+📂 𝗙𝗜𝗟𝗘 = Upload as File.
+•••••••••••••••••••
+
+➼/delthum = To Delet thumbnail
+
+➼pLease send photo to save Thumblail before you press any Below Button
+
+👲Powered By: @All_Movie_Rockers."""
+    SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos Follow the steps :-
+
+➲For Custom Name
+➼URL | FileName.Extension
+
+➲For Premium Videos
+➼URL | FileName.Extension | username | password"""
+    NOYES_URL = "Unknown URL detected. Use an Another Url"
     DOWNLOAD_START = "Downloading to my server \n📥 Please wait...⏳ 🙇🙇🙇 \nIt takes time depend on File Size"
     UPLOAD_START = "Yay,File Download Successfully 😊 \nNow Uploading to Telegram 📤"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). \nNeverthless, Yay,File Download Successfully 😊  \nNow Uploading to Telegram 📤."
@@ -28,14 +47,14 @@ URL | filename | username | password"""
     AFTER_SUCCESSFUL_UPLOAD_MSG = "Thanks for using me. \nDownloaded in {} seconds. \nJoin : @All_Movie_Rockers . \nUploaded in {} seconds."
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Thanks for using me. \nDownloaded in {} seconds. \nJoin : @All_Movie_Rockers . \nUploaded in {} seconds"
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
-    NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/ThankTelegram'>@SpEcHlDe</a>"
+    NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/shreevish'>꧁★HACKER★꧂</a>"
     SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. \nThis image will be used in the video / file."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
     CUSTOM_CAPTION_UL_FILE = " "
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
-    NO_VOID_FORMAT_FOUND = "Sorry, Your link doesnot cointain any video\n<b>YouTubeDL</b> said: {}"
+    NO_VOID_FORMAT_FOUND = "Sorry, Your link doesnot cointain any video\n<b>YouTubeDL</b> said: {}\nFor More Contact @shreevish"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     CURENT_PLAN_DETAILS = """⭕️<b>My Name : URL-UPLOADER</b>
 ⭕️<b>Creater :</b> @shreevish
@@ -86,7 +105,5 @@ Support Group : © @All_Movie_Rockers"""
 You can use /rename command after receiving file to rename it with custom thumbnail support."""
     CANCEL_STR = "Process Cancelled"
     ZIP_UPLOADED_STR = "Uploaded {} files in {} seconds"
-    FREE_USER_LIMIT_Q_SZE = """Cannot Process.
-Free users only 1 request per 30 minutes.
-/upgrade or Try 1800 seconds later."""
+    FREE_USER_LIMIT_Q_SZE = """ """
     SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
