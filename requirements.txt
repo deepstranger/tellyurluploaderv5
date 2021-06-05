@@ -1,4 +1,3 @@
-  
 aiohttp
 beautifulsoup4
 git+git://github.com/google/chatbase-python.git
@@ -10,4 +9,3 @@ requests
 tgcrypto
 youtube-dl
 olefile
-sqlalchemy==1.3.23
