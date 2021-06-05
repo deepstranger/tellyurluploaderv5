@@ -59,7 +59,7 @@ async def echo(bot, update):
         except Exception:
             await update.reply_text("Something Wrong. Contact my Support Group")
             return
-    intmsg = await update.reply_text("Analyzing given link...", quote=True) 
+    logger.info(update.from_user)
     url = update.text
     youtube_dl_username = None
     youtube_dl_password = None
@@ -118,9 +118,6 @@ async def echo(bot, update):
             "-j",
             url
         ]
-     if "hotstar" in url:
-        command_to_exec.append("--geo-bypass-country")
-        command_to_exec.append("IN")
     if youtube_dl_username is not None:
         command_to_exec.append("--username")
         command_to_exec.append(youtube_dl_username)
@@ -284,7 +281,11 @@ async def echo(bot, update):
             update.message_id,
             update.chat.id
         )
-        await intmsg.delete()
+        if os.path.exists(thumb_image_path):
+            im = Image.open(thumb_image_path).convert("RGB")
+            im.save(thumb_image_path.replace(".webp", ".jpg"), "jpeg")
+        else:
+            thumb_image_path = None
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION.format(thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
@@ -310,8 +311,6 @@ async def echo(bot, update):
             )
         ])
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
-        
-        await intmsg.delete()
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION.format(""),
