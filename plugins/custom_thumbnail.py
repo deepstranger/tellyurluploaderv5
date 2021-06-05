@@ -146,3 +146,40 @@ async def delete_thumbnail(bot, update):
         text=Translation.DEL_ETED_CUSTOM_THUMB_NAIL,
         reply_to_message_id=update.message_id
     )
+
+    
+@pyrogram.Client.on_message(pyrogram.filters.command(["showthumb"]))
+async def show_thumb(bot, update):
+    if update.from_user.id in Config.BANNED_USERS:
+        await bot.delete_messages(
+            chat_id=update.chat.id,
+            message_ids=update.message_id,
+            revoke=True
+        )
+        return
+
+    thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
+    if not os.path.exists(thumb_image_path):
+        mes = await thumb(update.from_user.id)
+        if mes != None:
+            m = await bot.get_messages(update.chat.id, mes.msg_id)
+            await m.download(file_name=thumb_image_path)
+            thumb_image_path = thumb_image_path
+        else:
+            thumb_image_path = None    
+    
+    if thumb_image_path is not None:
+        try:
+            await bot.send_photo(
+                chat_id=update.chat.id,
+                photo=thumb_image_path,
+                caption=Translation.SHOW_THUMB
+            )
+        except:
+            pass
+    else:
+        await bot.send_message(
+            chat_id=update.chat.id,
+            text=Translation.NO_THUMB,
+            reply_to_message_id=update.message_id
+        )
