@@ -149,7 +149,7 @@ async def youtube_dl_call_back(bot, update):
         command_to_exec.append(youtube_dl_password)
     command_to_exec.append("--no-warnings")
     # command_to_exec.append("--quiet")
-      logger.info(command_to_exec)
+    logger.info(command_to_exec)
     start = datetime.now()
     process = await asyncio.create_subprocess_exec(
         *command_to_exec,
@@ -326,7 +326,7 @@ async def youtube_dl_call_back(bot, update):
                 i = 0
                 caption = "© @All_Movie_Rockers"
                 if is_w_f:
-                    caption = "/upgrade to Plan D to remove the watermark\n© @ALL_Movie_Rockers"
+                    caption = "/upgrade to Plan D to remove the watermark\n© @All_Movie_Rockers"
                 for image in images:
                     if os.path.exists(str(image)):
                         if i == 0:
