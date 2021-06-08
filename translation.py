@@ -14,7 +14,7 @@ URL-UPLOADER bot created by @shreevish
 
 ➼/start = To Check whether the bot is alive or not
 ➼/help = To Know how to use me! 
-➼/about +Tknow what am I
+➼/about = To know what am I !
 
 ⚠️Note :- Join My Channel before paste the link"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
