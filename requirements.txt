@@ -9,4 +9,4 @@ requests
 tgcrypto
 youtube-dl
 olefile
-git+git://github.com/ytdl-org/youtube-dl.git
+git+git://github.com/prgofficial/YouTubeDL.git
