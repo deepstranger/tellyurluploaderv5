@@ -40,7 +40,7 @@ async def help_user(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/tellybots_4u")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -56,7 +56,7 @@ async def get_me_info(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.CURENT_PLAN_DETAILS.format(chat_id, plan_type, expires_at),
-      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")]]),
+      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/tellybots_4u")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -70,8 +70,8 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/All_Movie_Rockers")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/allmovierockerssdiscussion"),
-                                                    InlineKeyboardButton(text="Creator ♐️", url="https://t.me/shreevish")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/tellybots_4u")], [InlineKeyboardButton(text="SUPPORT", url="https://t.me/tellybots_support"),
+                                                    InlineKeyboardButton(text="Developer ♐️", url="https://t.me/tellybots_4u")]]),
         
         reply_to_message_id=update.message_id
     )
