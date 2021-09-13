@@ -4,12 +4,9 @@ I am Telegram URL Upload Bot! Developed by @Tellybots_4u
 
 Please send me any Url Link, I can upload to telegram as File/Video
  
-URL-UPLOADER bot by @Tellybots_4u
+URL-UPLOADER bot by @Tellybots_4u"""
 
-➼/start = To Check whether the bot is alive or not
-➼/help = To Know how to use me!
 
-⚠️Note :- Plz Join Updates Channel before pasting the link here"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "Contact @sahaynitin815 for Details"
