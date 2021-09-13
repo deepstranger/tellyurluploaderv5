@@ -1,26 +1,19 @@
 class Translation(object):
     START_TEXT = """Hello,
-i am Telegram URL Upload Bot! Created by @Tellybots_4u
+I am Telegram URL Upload Bot! Developed by @Tellybots_4u
 
-Please send me any direct download URL Link, i can upload to telegram as File/Video
-
- ⚡  Note : its support almost all direct Url's except torrent link & some links . . . 🚨
+Please send me any Url Link, I can upload to telegram as File/Video
  
-🚨 🔞 Links gives you PERMANENT BAN 🚨
-
-       ┈┈┈••💙✿❤️✿💚••┈┈┈
-       
 URL-UPLOADER bot by @Tellybots_4u
 
 ➼/start = To Check whether the bot is alive or not
-➼/help = To Know how to use me! 
-➼/about = To know what am I !
+➼/help = To Know how to use me!
 
 ⚠️Note :- Join My Channel before paste the link"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "Contact @sahaynitin815 for Details"
-    FORMAT_SELECTION = """📭 𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼o𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁👇
+    FORMAT_SELECTION = """📭 𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁👇
 
 🎞️ 𝗩𝗜𝗗𝗘𝗢 = Upload as Streamble.
 
@@ -62,7 +55,7 @@ URL-UPLOADER bot by @Tellybots_4u
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
 ⭕️<b>Source Code :</b> 👉 <a href='https://t.me/tellybots_digital'>Click Here</a>"""
     
-    HELP_USER = """Hai am URL Uploader bot..
+    HELP_USER = """Hi I am URL Uploader bot..
 👉  Follow the below steps to download :-
 
 1. Send url (Link|New Name with Extension).
@@ -73,11 +66,11 @@ URL-UPLOADER bot by @Tellybots_4u
    Video  - Give File as video without Screenshots
    DFile  - Give File without Screenshots
    
-Creator : @shreevish
+Developer : @Tellybots_4u
 --------
 Send /about to know current plan details
 
-Support Group : © @All_Movie_Rockers"""
+Support Group : © @Tellybots_support"""
  
         
         
