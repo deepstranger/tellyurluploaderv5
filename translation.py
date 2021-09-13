@@ -1,16 +1,16 @@
 class Translation(object):
     START_TEXT = """Hello,
-i am Telegram URL Upload Bot! Created by @shreevish
+i am Telegram URL Upload Bot! Created by @Tellybots_4u
 
 Please send me any direct download URL Link, i can upload to telegram as File/Video
 
- 🚨 . . . Note : its support almost all direct Url's except torrent link & some links . . . 🚨
+ ⚡  Note : its support almost all direct Url's except torrent link & some links . . . 🚨
  
-🚨 PRON video🔞 Links gives you PERMANENT BAN 🚨
+🚨 🔞 Links gives you PERMANENT BAN 🚨
 
        ┈┈┈••💙✿❤️✿💚••┈┈┈
        
-URL-UPLOADER bot created by @shreevish
+URL-UPLOADER bot by @Tellybots_4u
 
 ➼/start = To Check whether the bot is alive or not
 ➼/help = To Know how to use me! 
@@ -19,19 +19,19 @@ URL-UPLOADER bot created by @shreevish
 ⚠️Note :- Join My Channel before paste the link"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
-    UPGRADE_TEXT = "Contact @shreevish for Details"
-    FORMAT_SELECTION = """📭 𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁👇
+    UPGRADE_TEXT = "Contact @sahaynitin815 for Details"
+    FORMAT_SELECTION = """📭 𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼o𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁👇
 
 🎞️ 𝗩𝗜𝗗𝗘𝗢 = Upload as Streamble.
 
 📂 𝗙𝗜𝗟𝗘 = Upload as File.
 •••••••••••••••••••
 
-➼/delthum = To Delet thumbnail
+➼/delthum = To Delete thumbnail
 
 ➼pLease send photo to save Thumblail before you press any Below Button
 
-👲Powered By: @All_Movie_Rockers."""
+👲Powered By: @Tellybots_4u."""
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos Follow the steps :-
 
 ➲For Custom Name
@@ -44,23 +44,23 @@ URL-UPLOADER bot created by @shreevish
     UPLOAD_START = "Yay,File Download Successfully 😊 \nNow Uploading to Telegram 📤"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). \nNeverthless, Yay,File Download Successfully 😊  \nNow Uploading to Telegram 📤."
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2 GB due to Telegram API limitations."
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "Thanks for using me. \nDownloaded in {} seconds. \nJoin : @All_Movie_Rockers . \nUploaded in {} seconds."
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Thanks for using me. \nDownloaded in {} seconds. \nJoin : @All_Movie_Rockers . \nUploaded in {} seconds"
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "Thanks for using me. \nDownloaded in {} seconds. \nJoin : @Tellybots_4u . \nUploaded in {} seconds."
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Thanks for using me. \nDownloaded in {} seconds. \nJoin : @Tellybots_4u . \nUploaded in {} seconds"
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
-    NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/shreevish'>꧁★HACKER★꧂</a>"
+    NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/tellybots_4u'>Tellybots_4u</a>"
     SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. \nThis image will be used in the video / file."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
     CUSTOM_CAPTION_UL_FILE = " "
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
-    NO_VOID_FORMAT_FOUND = "Sorry, Your link doesnot cointain any video\n<b>YouTubeDL</b> said: {}\nFor More Contact @shreevish"
+    NO_VOID_FORMAT_FOUND = "Sorry, Your link doesnot cointain any video\n<b>YouTubeDL</b> said: {}\nFor More Contact @Tellybots_support"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
-    CURENT_PLAN_DETAILS = """⭕️<b>My Name : URL-UPLOADER</b>
-⭕️<b>Creater :</b> @shreevish
+    CURRENT_PLAN_DETAILS = """⭕️<b>My Name : URL-UPLOADER</b>
+⭕️<b>Developer :</b> @Tellybots_4u
 ⭕️<b>Language :</b> <code>Python3</code>
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
-⭕️<b>Source Code :</b> 👉 <a href='https://telegram.dog/All_Movie_rockers'>Click Here</a>"""
+⭕️<b>Source Code :</b> 👉 <a href='https://t.me/tellybots_digital'>Click Here</a>"""
     
     HELP_USER = """Hai am URL Uploader bot..
 👉  Follow the below steps to download :-
