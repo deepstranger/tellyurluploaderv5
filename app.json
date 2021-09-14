@@ -1,5 +1,5 @@
 {
-  "name": "URL Uploader",
+  "name": "Telly Url Uploader",
   "description": "Telegram's best Url Uploader bot",
   "keywords": [
     "telegram",
@@ -14,9 +14,9 @@
     "remote",
     "uploader"
   ],
-  "success_url": "https://telegram.dog/URLUPLOADERSHREE_BOT",
-  "website": "https://github.com/satyushree/URL-UPLOADER",
-  "repository": "https://github.com/satyushree/URL-UPLOADER",
+  "success_url": "https://telegram.dog/tellyurluploader4u",
+  "website": "https://github.com/sahaynitin/tellyurluploaderbotv5",
+  "repository": "https://github.com/sahaynitin/tellyurluploaderbotv5",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -38,7 +38,7 @@
       "description": "Get this value from https://my.telegram.org",
       "value": ""
     },
-    "AUTH_USERS": {
+    "OWNER_ID or SUDO_USERS": {
       "description": "allow only pre-defined users to use this bot",
       "value": "7351948 20516707 23122162 500346573"
     },
