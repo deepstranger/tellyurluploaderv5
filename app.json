@@ -76,7 +76,7 @@
       }
   ],
   "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    "url": "https://github.com/abhiTronix/azure_video_downloader/releases/download/v1.0.0/ffmpeg.zip"
   }, {
     "url": "heroku/python"
   }],
